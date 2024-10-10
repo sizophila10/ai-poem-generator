@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to the Poem World</h1>
+        <h1>Welcome to the World of Poems</h1>
       </header>
 
       <main>
-        <form>
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the poem"
@@ -24,11 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          I was a little girl when I traveled here
-          <br />
-          I was a little girl when I didn't know a language that everyone knows
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
